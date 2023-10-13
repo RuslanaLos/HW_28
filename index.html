@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Star Wars</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+<header class="header">
+    <div class="header_bg">
+        <img src="images/header/header.svg" alt="logo">
+    </div>
+</header>
+<main>
+    <div class="container-xl">
+        <div class="actions col-12">
+            <button class="btn btn-light" id="peopleBtn">Show people</button>
+            <button class="btn btn-light" id="vehiclesBtn">Show vehicles</button>
+            <button class="btn btn-light" id="planetsBtn">Show planets</button>
+        </div>
+        <div class="info_wrap col-12">
+            <div class="people_info col-3" id="peopleWrap">
+                <ul class="list" id="peopleInfoList" style="display: none"></ul>
+                <div class="btn_wrap col-12" style="display: none" id="peopleButtons">
+                    <div class="d-flex justify-content-center gap-1">
+                        <button class="btn prev_btn btn-light btn-sm" id="peoplePrev">
+                            <img src="images/icons/prev_btn.svg" alt="previous">
+                        </button>
+                        <button class="btn next_btn btn-light btn-sm" id="peopleNext">
+                            <img src="images/icons/next_btn.svg" alt="next">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="vehicle_info col-3" id="vehiclesWrap">
+                <ul class="list" id="vehiclesInfoList" style="display: none"></ul>
+                <div class="btn_wrap col-12" style="display: none" id="vehiclesButtons">
+                    <div class="d-flex justify-content-center gap-1">
+                        <button class="btn prev_btn btn-light btn-sm" id="vehiclesPrev">
+                            <img src="images/icons/prev_btn.svg" alt="previous">
+                        </button>
+                        <button class="btn next_btn btn-light btn-sm" id="vehiclesNext">
+                            <img src="images/icons/next_btn.svg" alt="next">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="planets_info col-3" id="planetsWrap">
+                <ul class="list" id="planetsInfoList" style="display: none"></ul>
+                <div class="btn_wrap col-12" style="display: none" id="planetsButtons">
+                    <div class="d-flex justify-content-center gap-1">
+                        <button class="btn prev_btn btn-light btn-sm" id="planetsPrev">
+                            <img src="images/icons/prev_btn.svg" alt="previous">
+                        </button>
+                        <button class="btn next_btn btn-light btn-sm" id="planetsNext">
+                            <img src="images/icons/next_btn.svg" alt="next">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" tabindex="-1" aria-labelledby="InfoModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title" >Details</h3>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="modal-list" id="modalList"></ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Back to main list</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="node_modules/axios/dist/axios.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/functions.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

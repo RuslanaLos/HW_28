@@ -1,0 +1,50 @@
+body {
+    background-image: url("../images/body/body_bg.jpg");
+    margin: 0;
+}
+.header {
+    margin-bottom: 50px;
+}
+.header_bg {
+    text-align: center;
+    background-color: black;
+    padding: 15px 0;
+}
+.header_bg img {
+    height: 80px;
+}
+.actions, .info_wrap{
+    padding: 10px;
+    max-width: 1080px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.actions .btn, .next_btn, .prev_btn, .close_btn{
+    opacity: 0.7;
+    margin-bottom: 20px;
+}
+.btn_wrap {
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.info_wrap div ul{
+    background-color: white;
+    opacity: 0.6;
+    border-radius: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.modal-content {
+    position: fixed;
+    top: 200px;
+    background-image: url("../images/modal_bg/modal_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.modal-title, .modal-list li {
+    color: white;
+}
